@@ -4,6 +4,7 @@ $(document).ready(function() {
     $('.rsvp-list').hide();
 
     $('.checkmark').click(function() {
+        $('.checkmark').css({'background-color': '#FE1739', 'color': 'white'});
         $('.cross').animate({'width': '0', 'opacity': '0'}, 2000);
         $('.checkmark').animate({'width': '600px', 'margin-left': '0'}, 2000, function() {
         $('.checkmark').css({'margin': '0 auto'});
@@ -14,6 +15,7 @@ $(document).ready(function() {
         });
 
     $('.cross').click(function() {
+        $('.cross').css({'background-color': '#FE1739', 'color': 'white'});
         $('.checkmark').animate({'width': '0', 'opacity': '0'}, 2000);
         $('.cross').animate({'width': '600px', 'margin-left': '0'}, 2000, function() {
         $('.cross').css({'margin': '0 auto'});
